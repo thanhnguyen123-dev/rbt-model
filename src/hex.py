@@ -72,4 +72,3 @@ def get_hex_graph(cs_question_type:int):
     plt.show()
 
 
-get_hex_graph(5)
