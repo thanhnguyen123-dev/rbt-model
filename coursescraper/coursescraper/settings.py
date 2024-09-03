@@ -12,6 +12,10 @@ BOT_NAME = "coursescraper"
 SPIDER_MODULES = ["coursescraper.spiders"]
 NEWSPIDER_MODULE = "coursescraper.spiders"
 
+ITEM_PIPELINES = {
+  'coursescraper.pipelines.CoursescraperPipeline': 200,
+  'coursescraper.pipelines.SaveToMySQLPipeline': 300,
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "coursescraper (+http://www.yourdomain.com)"
